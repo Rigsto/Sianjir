@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B3071A4242BC2EC0042D97C /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2B3071A3242BC2EC0042D97C /* IQKeyboardManagerSwift */; };
+		2B3071AA242CDFFD0042D97C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3071A9242CDFFD0042D97C /* Constants.swift */; };
+		2B5B2425242D340100F6A4B0 /* EmbedRoadListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2424242D340100F6A4B0 /* EmbedRoadListViewController.swift */; };
+		2B5B2428242D351000F6A4B0 /* RoadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B2426242D351000F6A4B0 /* RoadCell.swift */; };
+		2B5B2429242D351000F6A4B0 /* RoadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5B2427242D351000F6A4B0 /* RoadCell.xib */; };
+		2B5B242B242D388C00F6A4B0 /* Road.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B242A242D388C00F6A4B0 /* Road.swift */; };
+		2B5B242D242D3B0500F6A4B0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B242C242D3B0500F6A4B0 /* Data.swift */; };
+		2B5B242F242D48E900F6A4B0 /* RoadInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5B242E242D48E900F6A4B0 /* RoadInfoViewController.swift */; };
+		2BB94DF9242D1B8D00E906DF /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB94DF8242D1B8D00E906DF /* Weather.swift */; };
+		67D7701454025E2CC3FA8C99 /* Pods_Sianjir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F876F8310DD6117E1C4C9A4 /* Pods_Sianjir.framework */; };
+		77A90D769E3BA6DC2E691B44 /* Pods_Sianjir_SianjirUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 626D83492880D8706F4DDE96 /* Pods_Sianjir_SianjirUITests.framework */; };
+		BE9977298804F04FD183759E /* Pods_Sianjir_SianjirTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0A94B034BDDBEAA34693EE /* Pods_Sianjir_SianjirTests.framework */; };
+		D92B44C12417795F00B3AC12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44C02417795F00B3AC12 /* AppDelegate.swift */; };
+		D92B44C32417795F00B3AC12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44C22417795F00B3AC12 /* SceneDelegate.swift */; };
+		D92B44C52417795F00B3AC12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44C42417795F00B3AC12 /* ViewController.swift */; };
+		D92B44C82417795F00B3AC12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92B44C62417795F00B3AC12 /* Main.storyboard */; };
+		D92B44CA2417796100B3AC12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D92B44C92417796100B3AC12 /* Assets.xcassets */; };
+		D92B44CD2417796100B3AC12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92B44CB2417796100B3AC12 /* LaunchScreen.storyboard */; };
+		D92B44D82417796100B3AC12 /* SianjirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44D72417796100B3AC12 /* SianjirTests.swift */; };
+		D92B44E32417796100B3AC12 /* SianjirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44E22417796100B3AC12 /* SianjirUITests.swift */; };
+		D92B44F12418FC4700B3AC12 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B44F02418FC4700B3AC12 /* InfoViewController.swift */; };
+		D94AF99324201B60003F78AA /* SplashScreenControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AF99224201B60003F78AA /* SplashScreenControllerViewController.swift */; };
+		D94AF995242093C6003F78AA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AF994242093C6003F78AA /* WeatherViewController.swift */; };
+		D94AF9992420B400003F78AA /* EmbedWeatherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94AF9982420B400003F78AA /* EmbedWeatherTableViewController.swift */; };
+		D9624AEF2421EC6100B4A30F /* emergency.wav in Resources */ = {isa = PBXBuildFile; fileRef = D9624AEE2421EC6100B4A30F /* emergency.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D92B44D42417796100B3AC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92B44B52417795F00B3AC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D92B44BC2417795F00B3AC12;
+			remoteInfo = Sianjir;
+		};
+		D92B44DF2417796100B3AC12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D92B44B52417795F00B3AC12 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D92B44BC2417795F00B3AC12;
+			remoteInfo = Sianjir;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E0A94B034BDDBEAA34693EE /* Pods_Sianjir_SianjirTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sianjir_SianjirTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A556E777B17BE9617A5886A /* Pods-Sianjir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir.debug.xcconfig"; path = "Target Support Files/Pods-Sianjir/Pods-Sianjir.debug.xcconfig"; sourceTree = "<group>"; };
+		2B3071A9242CDFFD0042D97C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B5B2424242D340100F6A4B0 /* EmbedRoadListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedRoadListViewController.swift; sourceTree = "<group>"; };
+		2B5B2426242D351000F6A4B0 /* RoadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadCell.swift; sourceTree = "<group>"; };
+		2B5B2427242D351000F6A4B0 /* RoadCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoadCell.xib; sourceTree = "<group>"; };
+		2B5B242A242D388C00F6A4B0 /* Road.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Road.swift; sourceTree = "<group>"; };
+		2B5B242C242D3B0500F6A4B0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		2B5B242E242D48E900F6A4B0 /* RoadInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadInfoViewController.swift; sourceTree = "<group>"; };
+		2BB94DF8242D1B8D00E906DF /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		354D0927E1983A676565BD5D /* Pods-Sianjir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir.release.xcconfig"; path = "Target Support Files/Pods-Sianjir/Pods-Sianjir.release.xcconfig"; sourceTree = "<group>"; };
+		51E38251C94D5BBD2E911FB5 /* Pods-Sianjir-SianjirUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir-SianjirUITests.release.xcconfig"; path = "Target Support Files/Pods-Sianjir-SianjirUITests/Pods-Sianjir-SianjirUITests.release.xcconfig"; sourceTree = "<group>"; };
+		56809E7F045C77912361CA39 /* Pods-Sianjir-SianjirUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir-SianjirUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sianjir-SianjirUITests/Pods-Sianjir-SianjirUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		626D83492880D8706F4DDE96 /* Pods_Sianjir_SianjirUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sianjir_SianjirUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F876F8310DD6117E1C4C9A4 /* Pods_Sianjir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sianjir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94366E02A428C7386F46E780 /* Pods-Sianjir-SianjirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir-SianjirTests.release.xcconfig"; path = "Target Support Files/Pods-Sianjir-SianjirTests/Pods-Sianjir-SianjirTests.release.xcconfig"; sourceTree = "<group>"; };
+		B312A60580186FAEDEFD5F7C /* Pods-SianjirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SianjirTests.debug.xcconfig"; path = "Target Support Files/Pods-SianjirTests/Pods-SianjirTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDD415B3EFFDB9E147C831ED /* Pods-SianjirTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SianjirTests.release.xcconfig"; path = "Target Support Files/Pods-SianjirTests/Pods-SianjirTests.release.xcconfig"; sourceTree = "<group>"; };
+		D92B44BD2417795F00B3AC12 /* Sianjir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sianjir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92B44C02417795F00B3AC12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D92B44C22417795F00B3AC12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D92B44C42417795F00B3AC12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D92B44C72417795F00B3AC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D92B44C92417796100B3AC12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D92B44CC2417796100B3AC12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D92B44CE2417796100B3AC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92B44D32417796100B3AC12 /* SianjirTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SianjirTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92B44D72417796100B3AC12 /* SianjirTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SianjirTests.swift; sourceTree = "<group>"; };
+		D92B44D92417796100B3AC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92B44DE2417796100B3AC12 /* SianjirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SianjirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D92B44E22417796100B3AC12 /* SianjirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SianjirUITests.swift; sourceTree = "<group>"; };
+		D92B44E42417796100B3AC12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D92B44F02418FC4700B3AC12 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		D94AF99224201B60003F78AA /* SplashScreenControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenControllerViewController.swift; sourceTree = "<group>"; };
+		D94AF994242093C6003F78AA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		D94AF9982420B400003F78AA /* EmbedWeatherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbedWeatherTableViewController.swift; sourceTree = "<group>"; };
+		D9624AEE2421EC6100B4A30F /* emergency.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = emergency.wav; sourceTree = "<group>"; };
+		FDA4340EAAE8E8DF5900F678 /* Pods-Sianjir-SianjirTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sianjir-SianjirTests.debug.xcconfig"; path = "Target Support Files/Pods-Sianjir-SianjirTests/Pods-Sianjir-SianjirTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D92B44BA2417795F00B3AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67D7701454025E2CC3FA8C99 /* Pods_Sianjir.framework in Frameworks */,
+				2B3071A4242BC2EC0042D97C /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44D02417796100B3AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE9977298804F04FD183759E /* Pods_Sianjir_SianjirTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44DB2417796100B3AC12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77A90D769E3BA6DC2E691B44 /* Pods_Sianjir_SianjirUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B30719F242BBCA20042D97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2BB94DF8242D1B8D00E906DF /* Weather.swift */,
+				2B5B242A242D388C00F6A4B0 /* Road.swift */,
+				2B5B242C242D3B0500F6A4B0 /* Data.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2B3071A0242BBCB00042D97C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D92B44C62417795F00B3AC12 /* Main.storyboard */,
+				2B5B2426242D351000F6A4B0 /* RoadCell.swift */,
+				2B5B2427242D351000F6A4B0 /* RoadCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B3071A1242BBCB70042D97C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D92B44C42417795F00B3AC12 /* ViewController.swift */,
+				D94AF99224201B60003F78AA /* SplashScreenControllerViewController.swift */,
+				D92B44F02418FC4700B3AC12 /* InfoViewController.swift */,
+				D94AF994242093C6003F78AA /* WeatherViewController.swift */,
+				D94AF9982420B400003F78AA /* EmbedWeatherTableViewController.swift */,
+				2B5B2424242D340100F6A4B0 /* EmbedRoadListViewController.swift */,
+				2B5B242E242D48E900F6A4B0 /* RoadInfoViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD3F2EEA292DD78483227047 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F876F8310DD6117E1C4C9A4 /* Pods_Sianjir.framework */,
+				626D83492880D8706F4DDE96 /* Pods_Sianjir_SianjirUITests.framework */,
+				0E0A94B034BDDBEAA34693EE /* Pods_Sianjir_SianjirTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D92B44B42417795F00B3AC12 = {
+			isa = PBXGroup;
+			children = (
+				D92B44BF2417795F00B3AC12 /* Sianjir */,
+				D92B44D62417796100B3AC12 /* SianjirTests */,
+				D92B44E12417796100B3AC12 /* SianjirUITests */,
+				D92B44BE2417795F00B3AC12 /* Products */,
+				E038C865E0AACC457874CBFC /* Pods */,
+				AD3F2EEA292DD78483227047 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D92B44BE2417795F00B3AC12 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D92B44BD2417795F00B3AC12 /* Sianjir.app */,
+				D92B44D32417796100B3AC12 /* SianjirTests.xctest */,
+				D92B44DE2417796100B3AC12 /* SianjirUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D92B44BF2417795F00B3AC12 /* Sianjir */ = {
+			isa = PBXGroup;
+			children = (
+				2B30719F242BBCA20042D97C /* Model */,
+				2B3071A0242BBCB00042D97C /* View */,
+				2B3071A1242BBCB70042D97C /* Controller */,
+				D9624AF02421ECD100B4A30F /* Sound */,
+				D92B44C02417795F00B3AC12 /* AppDelegate.swift */,
+				D92B44C22417795F00B3AC12 /* SceneDelegate.swift */,
+				D92B44C92417796100B3AC12 /* Assets.xcassets */,
+				D92B44CB2417796100B3AC12 /* LaunchScreen.storyboard */,
+				D92B44CE2417796100B3AC12 /* Info.plist */,
+				2B3071A9242CDFFD0042D97C /* Constants.swift */,
+			);
+			path = Sianjir;
+			sourceTree = "<group>";
+		};
+		D92B44D62417796100B3AC12 /* SianjirTests */ = {
+			isa = PBXGroup;
+			children = (
+				D92B44D72417796100B3AC12 /* SianjirTests.swift */,
+				D92B44D92417796100B3AC12 /* Info.plist */,
+			);
+			path = SianjirTests;
+			sourceTree = "<group>";
+		};
+		D92B44E12417796100B3AC12 /* SianjirUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D92B44E22417796100B3AC12 /* SianjirUITests.swift */,
+				D92B44E42417796100B3AC12 /* Info.plist */,
+			);
+			path = SianjirUITests;
+			sourceTree = "<group>";
+		};
+		D9624AF02421ECD100B4A30F /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				D9624AEE2421EC6100B4A30F /* emergency.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		E038C865E0AACC457874CBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A556E777B17BE9617A5886A /* Pods-Sianjir.debug.xcconfig */,
+				354D0927E1983A676565BD5D /* Pods-Sianjir.release.xcconfig */,
+				56809E7F045C77912361CA39 /* Pods-Sianjir-SianjirUITests.debug.xcconfig */,
+				51E38251C94D5BBD2E911FB5 /* Pods-Sianjir-SianjirUITests.release.xcconfig */,
+				B312A60580186FAEDEFD5F7C /* Pods-SianjirTests.debug.xcconfig */,
+				CDD415B3EFFDB9E147C831ED /* Pods-SianjirTests.release.xcconfig */,
+				FDA4340EAAE8E8DF5900F678 /* Pods-Sianjir-SianjirTests.debug.xcconfig */,
+				94366E02A428C7386F46E780 /* Pods-Sianjir-SianjirTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D92B44BC2417795F00B3AC12 /* Sianjir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92B44E72417796100B3AC12 /* Build configuration list for PBXNativeTarget "Sianjir" */;
+			buildPhases = (
+				57C491D4723C6FC61C91D75A /* [CP] Check Pods Manifest.lock */,
+				D92B44B92417795F00B3AC12 /* Sources */,
+				D92B44BA2417795F00B3AC12 /* Frameworks */,
+				D92B44BB2417795F00B3AC12 /* Resources */,
+				BC9476771CB505D3A7371F6D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sianjir;
+			packageProductDependencies = (
+				2B3071A3242BC2EC0042D97C /* IQKeyboardManagerSwift */,
+			);
+			productName = Sianjir;
+			productReference = D92B44BD2417795F00B3AC12 /* Sianjir.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D92B44D22417796100B3AC12 /* SianjirTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92B44EA2417796100B3AC12 /* Build configuration list for PBXNativeTarget "SianjirTests" */;
+			buildPhases = (
+				2977B839ED92042D00DDECA2 /* [CP] Check Pods Manifest.lock */,
+				D92B44CF2417796100B3AC12 /* Sources */,
+				D92B44D02417796100B3AC12 /* Frameworks */,
+				D92B44D12417796100B3AC12 /* Resources */,
+				F40DABCC5D5A0BBB95670DFF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92B44D52417796100B3AC12 /* PBXTargetDependency */,
+			);
+			name = SianjirTests;
+			productName = SianjirTests;
+			productReference = D92B44D32417796100B3AC12 /* SianjirTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D92B44DD2417796100B3AC12 /* SianjirUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D92B44ED2417796100B3AC12 /* Build configuration list for PBXNativeTarget "SianjirUITests" */;
+			buildPhases = (
+				623B5F19E99EEA2116E26AE4 /* [CP] Check Pods Manifest.lock */,
+				D92B44DA2417796100B3AC12 /* Sources */,
+				D92B44DB2417796100B3AC12 /* Frameworks */,
+				D92B44DC2417796100B3AC12 /* Resources */,
+				4B13211C3F0686A93BCD5892 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D92B44E02417796100B3AC12 /* PBXTargetDependency */,
+			);
+			name = SianjirUITests;
+			productName = SianjirUITests;
+			productReference = D92B44DE2417796100B3AC12 /* SianjirUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D92B44B52417795F00B3AC12 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Apple Developer Academy";
+				TargetAttributes = {
+					D92B44BC2417795F00B3AC12 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					D92B44D22417796100B3AC12 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D92B44BC2417795F00B3AC12;
+					};
+					D92B44DD2417796100B3AC12 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = D92B44BC2417795F00B3AC12;
+					};
+				};
+			};
+			buildConfigurationList = D92B44B82417795F00B3AC12 /* Build configuration list for PBXProject "Sianjir" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D92B44B42417795F00B3AC12;
+			packageReferences = (
+				2B3071A2242BC2EC0042D97C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = D92B44BE2417795F00B3AC12 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D92B44BC2417795F00B3AC12 /* Sianjir */,
+				D92B44D22417796100B3AC12 /* SianjirTests */,
+				D92B44DD2417796100B3AC12 /* SianjirUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D92B44BB2417795F00B3AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92B44CD2417796100B3AC12 /* LaunchScreen.storyboard in Resources */,
+				D92B44CA2417796100B3AC12 /* Assets.xcassets in Resources */,
+				2B5B2429242D351000F6A4B0 /* RoadCell.xib in Resources */,
+				D9624AEF2421EC6100B4A30F /* emergency.wav in Resources */,
+				D92B44C82417795F00B3AC12 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44D12417796100B3AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44DC2417796100B3AC12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2977B839ED92042D00DDECA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sianjir-SianjirTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B13211C3F0686A93BCD5892 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirUITests/Pods-Sianjir-SianjirUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirUITests/Pods-Sianjir-SianjirUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirUITests/Pods-Sianjir-SianjirUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57C491D4723C6FC61C91D75A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sianjir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		623B5F19E99EEA2116E26AE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sianjir-SianjirUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC9476771CB505D3A7371F6D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir/Pods-Sianjir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir/Pods-Sianjir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sianjir/Pods-Sianjir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F40DABCC5D5A0BBB95670DFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirTests/Pods-Sianjir-SianjirTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirTests/Pods-Sianjir-SianjirTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sianjir-SianjirTests/Pods-Sianjir-SianjirTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D92B44B92417795F00B3AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D94AF99324201B60003F78AA /* SplashScreenControllerViewController.swift in Sources */,
+				D94AF995242093C6003F78AA /* WeatherViewController.swift in Sources */,
+				D92B44C52417795F00B3AC12 /* ViewController.swift in Sources */,
+				2B5B242B242D388C00F6A4B0 /* Road.swift in Sources */,
+				2B5B242F242D48E900F6A4B0 /* RoadInfoViewController.swift in Sources */,
+				D94AF9992420B400003F78AA /* EmbedWeatherTableViewController.swift in Sources */,
+				2BB94DF9242D1B8D00E906DF /* Weather.swift in Sources */,
+				D92B44C12417795F00B3AC12 /* AppDelegate.swift in Sources */,
+				D92B44F12418FC4700B3AC12 /* InfoViewController.swift in Sources */,
+				2B5B242D242D3B0500F6A4B0 /* Data.swift in Sources */,
+				2B5B2428242D351000F6A4B0 /* RoadCell.swift in Sources */,
+				D92B44C32417795F00B3AC12 /* SceneDelegate.swift in Sources */,
+				2B5B2425242D340100F6A4B0 /* EmbedRoadListViewController.swift in Sources */,
+				2B3071AA242CDFFD0042D97C /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44CF2417796100B3AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92B44D82417796100B3AC12 /* SianjirTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D92B44DA2417796100B3AC12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92B44E32417796100B3AC12 /* SianjirUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D92B44D52417796100B3AC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D92B44BC2417795F00B3AC12 /* Sianjir */;
+			targetProxy = D92B44D42417796100B3AC12 /* PBXContainerItemProxy */;
+		};
+		D92B44E02417796100B3AC12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D92B44BC2417795F00B3AC12 /* Sianjir */;
+			targetProxy = D92B44DF2417796100B3AC12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D92B44C62417795F00B3AC12 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92B44C72417795F00B3AC12 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+			wrapsLines = 1;
+		};
+		D92B44CB2417796100B3AC12 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D92B44CC2417796100B3AC12 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D92B44E52417796100B3AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D92B44E62417796100B3AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D92B44E82417796100B3AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A556E777B17BE9617A5886A /* Pods-Sianjir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = Sianjir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maul.Sianjir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D92B44E92417796100B3AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 354D0927E1983A676565BD5D /* Pods-Sianjir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = Sianjir/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.maul.Sianjir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D92B44EB2417796100B3AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA4340EAAE8E8DF5900F678 /* Pods-Sianjir-SianjirTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = SianjirTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maul.SianjirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sianjir.app/Sianjir";
+			};
+			name = Debug;
+		};
+		D92B44EC2417796100B3AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94366E02A428C7386F46E780 /* Pods-Sianjir-SianjirTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = SianjirTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maul.SianjirTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sianjir.app/Sianjir";
+			};
+			name = Release;
+		};
+		D92B44EE2417796100B3AC12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56809E7F045C77912361CA39 /* Pods-Sianjir-SianjirUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = SianjirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maul.SianjirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sianjir;
+			};
+			name = Debug;
+		};
+		D92B44EF2417796100B3AC12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E38251C94D5BBD2E911FB5 /* Pods-Sianjir-SianjirUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UHSYUAN5UV;
+				INFOPLIST_FILE = SianjirUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = maul.SianjirUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sianjir;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D92B44B82417795F00B3AC12 /* Build configuration list for PBXProject "Sianjir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92B44E52417796100B3AC12 /* Debug */,
+				D92B44E62417796100B3AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92B44E72417796100B3AC12 /* Build configuration list for PBXNativeTarget "Sianjir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92B44E82417796100B3AC12 /* Debug */,
+				D92B44E92417796100B3AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92B44EA2417796100B3AC12 /* Build configuration list for PBXNativeTarget "SianjirTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92B44EB2417796100B3AC12 /* Debug */,
+				D92B44EC2417796100B3AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D92B44ED2417796100B3AC12 /* Build configuration list for PBXNativeTarget "SianjirUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D92B44EE2417796100B3AC12 /* Debug */,
+				D92B44EF2417796100B3AC12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B3071A2242BC2EC0042D97C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B3071A3242BC2EC0042D97C /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B3071A2242BC2EC0042D97C /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D92B44B52417795F00B3AC12 /* Project object */;
+}

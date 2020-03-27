@@ -1,0 +1,6 @@
+framework module Pods_Sianjir_SianjirUITests {
+  umbrella header "Pods-Sianjir-SianjirUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
